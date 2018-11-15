@@ -82,22 +82,7 @@ class OddballParticle implements Particle  //uses an interface
 }
 class JumboParticle extends NormalParticle //uses inheritance
 {
-	JumboParticle()
-	{
-		myAngle = (double)((Math.random()*3*2));
-		mySpeed = (double)(Math.random()*2.60);
-		myX=500;
-		myY=500;
-		color1 = (int)(Math.random()*256);
-		color2 = (int)(Math.random()*256);
-		color3 = (int)(Math.random()*256);
 
-	}
-	 public void move()
-	{
-		myX = myX +(Math.cos(myAngle)*mySpeed);
-		myY = myY +(Math.sin(myAngle)*mySpeed);
-	}
 	 public void show()
 	{
 		fill(color1,color2,color3);
